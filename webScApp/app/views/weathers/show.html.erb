@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @weather.address %>
+</p>
+
+<p>
+  <strong>Tenki:</strong>
+  <%= @weather.tenki %>
+</p>
+
+<p>
+  <strong>Gaiyo:</strong>
+  <%= @weather.gaiyo %>
+</p>
+
+<p>
+  <strong>Kion:</strong>
+  <%= @weather.kion %>
+</p>
+
+<p>
+  <strong>Max:</strong>
+  <%= @weather.max %>
+</p>
+
+<p>
+  <strong>Min:</strong>
+  <%= @weather.min %>
+</p>
+
+<p>
+  <strong>Kosui:</strong>
+  <%= @weather.kosui %>
+</p>
+
+<p>
+  <strong>Nichiji:</strong>
+  <%= @weather.nichiji %>
+</p>
+
+<%= link_to 'Edit', edit_weather_path(@weather) %> |
+<%= link_to 'Back', weathers_path %>

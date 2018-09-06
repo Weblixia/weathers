@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  address: MyString
+  tenki: MyString
+  gaiyo: MyText
+  kion: 1.5
+  max: 1.5
+  min: 1.5
+  kosui: 1.5
+  nichiji: 2018-09-05 21:15:11
+
+two:
+  address: MyString
+  tenki: MyString
+  gaiyo: MyText
+  kion: 1.5
+  max: 1.5
+  min: 1.5
+  kosui: 1.5
+  nichiji: 2018-09-05 21:15:11

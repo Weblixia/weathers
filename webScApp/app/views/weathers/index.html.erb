@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Weathers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Tenki</th>
+      <th>Gaiyo</th>
+      <th>Kion</th>
+      <th>Max</th>
+      <th>Min</th>
+      <th>Kosui</th>
+      <th>Nichiji</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @weathers.each do |weather| %>
+      <tr>
+        <td><%= weather.address %></td>
+        <td><%= weather.tenki %></td>
+        <td><%= weather.gaiyo %></td>
+        <td><%= weather.kion %></td>
+        <td><%= weather.max %></td>
+        <td><%= weather.min %></td>
+        <td><%= weather.kosui %></td>
+        <td><%= weather.nichiji %></td>
+        <td><%= link_to 'Show', weather %></td>
+        <td><%= link_to 'Edit', edit_weather_path(weather) %></td>
+        <td><%= link_to 'Destroy', weather, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Weather', new_weather_path %>

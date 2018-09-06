@@ -1,0 +1,57 @@
+<%= form_with(model: weather, local: true) do |form| %>
+  <% if weather.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(weather.errors.count, "error") %> prohibited this weather from being saved:</h2>
+
+      <ul>
+      <% weather.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tenki %>
+    <%= form.text_field :tenki %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gaiyo %>
+    <%= form.text_area :gaiyo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kion %>
+    <%= form.text_field :kion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max %>
+    <%= form.text_field :max %>
+  </div>
+
+  <div class="field">
+    <%= form.label :min %>
+    <%= form.text_field :min %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kosui %>
+    <%= form.text_field :kosui %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nichiji %>
+    <%= form.datetime_select :nichiji %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
